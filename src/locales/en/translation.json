@@ -1,0 +1,631 @@
+{
+  "selectLanguage": "Select Language",
+  "english": "English",
+  "arabic": "Arabic",
+  "submit": "Submit",
+  "comment": "this is for setings side bar",
+  "account": "Account",
+  "security": "Security",
+  "language": "Language",
+  "terms": "Terms & Condition",
+  "privacy": "Privacy Policy",
+  "manageOfferCard": "New Offer Management",
+  "companyId": "Company ID",
+  "collaborations": "Collaborations",
+  "updateInformation": "Update Your Information",
+  "companyName": "Company Name",
+  "phoneNumber": "Phone Number",
+  "aboutCompany": "About Company",
+  "updateLogo": "Update Logo",
+  "uploadPhoto": "Upload your photo",
+  "uploadDocuments": "Upload your company document",
+  "upload": "Upload",
+  "remove": "Remove",
+  "uploaded": "Uploaded",
+  "update": "Update",
+  "services": "Services",
+  "insurance": "Insurance",
+  "ecoFriendlyOptions": "Eco-Friendly Options",
+  "driverOptions": "Driver Options",
+  "mileageOptions": "Mileage Options",
+  "roadsideAssistance": "Roadside Assistance",
+  "discountsLoyalty": "Discounts & Loyalty",
+  "specialDeals": "Special Deals",
+  "longDistanceRentals": "Long-Distance Rentals",
+  "vatCertificate": "VAT Certificate",
+  "commercialRegistration": "Commercial Registration",
+  "contractToSigned": "Contract To Signed",
+  "aboutPlaceHolder": "Type about your company",
+  "securityPage": {
+    "title": "Update Your Password",
+    "form": {
+      "oldPassword": "Old Password",
+      "newPassword": "Create New Password",
+      "confirmPassword": "Confirm Password",
+      "oldPlaceholder": "Enter your current password",
+      "newPlaceholder": "Enter your new password",
+      "confirmPlaceholder": "Confirm your new password"
+    },
+    "button": {
+      "update": "Update",
+      "updating": "Updating..."
+    },
+    "requirements": {
+      "title": "Password Requirements:",
+      "length": "• At least 8 characters long",
+      "different": "• Must be different from your current password",
+      "mix": "• Should contain a mix of letters, numbers, and symbols"
+    },
+    "error": {
+      "oldRequired": "Old password is required",
+      "newRequired": "New password is required",
+      "length": "Password must be at least 8 characters long",
+      "confirmRequired": "Please confirm your password",
+      "noMatch": "Passwords do not match",
+      "sameAsOld": "New password must be different from old password"
+    },
+    "success": {
+      "updated": "Password updated successfully!"
+    }
+  },
+  "termsPage": {
+    "title": "Terms & Conditions",
+    "editTitle": "Edit Terms & Conditions",
+    "noContent": "No content yet. Click Edit to add content.",
+    "editButton": "Edit",
+    "updateButton": "Update"
+  },
+  "policyPage": {
+    "title": "Privacy Policy",
+    "editTitle": "Edit Privacy Policy",
+    "noContent": "No content yet. Click Edit to add content.",
+    "editButton": "Edit",
+    "updateButton": "Update"
+  },
+  "collaborationsPage": {
+    "title": "List Of Reports",
+    "addButton": "Add",
+    "searchPlaceholder": "User Name",
+    "table": {
+      "si": "#SI",
+      "companyName": "Company name",
+      "startDate": "Starting date",
+      "endDate": "Ending date",
+      "action": "Action"
+    },
+    "dropdown": {
+      "view": "View",
+      "edit": "Edit",
+      "delete": "Delete",
+      "hold": "Hold",
+      "addAuthorizedPerson": "Add Authorized People"
+    },
+    "noResults": "No reports found matching your search.",
+    "mobileScrollHint": "← Swipe left/right to see more columns →"
+  },
+  "reportsPage": {
+    "title": "List Of Reports",
+    "searchPlaceholder": "User Name",
+    "table": {
+      "si": "#SI",
+      "username": "Username",
+      "date": "Date of occurrence",
+      "details": "Details",
+      "view": "View"
+    },
+    "noResults": "No reports found matching your search.",
+    "mobileScrollHint": "← Swipe left/right to see more columns →"
+  },
+  "reportDetails": {
+    "title": "Report Details",
+    "reportedBy": "Reported by:",
+    "date": "Date:",
+    "description": "Description",
+    "pictures": "Pictures",
+    "location": "Location",
+    "coordinates": "Coordinates",
+    "openInMaps": "Open in Maps"
+  },
+  "sidebar": {
+    "dashboard": "Dashboard",
+    "manageRentals": "Manage Rentals",
+    "vehicles": "Vehicles",
+    "bookingRequest": "Booking Request",
+    "invoicePayment": "Invoice & Payment",
+    "messages": "Messages",
+    "notifications": "Notification",
+    "settings": "Settings",
+    "reports": "Reports",
+    "logout": "Log Out"
+  },
+  "chart": {
+    "title": "Earnings",
+    "currency": "OMR",
+    "year": "Year"
+  },
+  "dashboardTop": {
+    "welcome": "Welcome, {{name}}",
+    "greeting": "Have a nice day!",
+    "notifications": "Notifications",
+    "all": "All",
+    "admin": "Admin"
+  },
+  "transactionTable": {
+    "title": "Recent Transactions",
+    "columns": {
+      "trId": "#TrID",
+      "userName": "User Name",
+      "userType": "User Type",
+      "amount": "Amount",
+      "date": "Date",
+      "action": "Action",
+      "view": "View"
+    }
+  },
+  "transactionDetails": {
+    "title": "Transaction Details",
+    "transactionId": "Transaction ID",
+    "date": "Date",
+    "userName": "User Name",
+    "accountNumber": "A/C number",
+    "accountHolder": "A/C holder name",
+    "amount": "Transaction amount",
+    "email": "Email",
+    "notProvided": "Not provided",
+    "download": "Download",
+    "print": "Print"
+  },
+  "rentalData": {
+    "customer": "Customer",
+    "vehicle": "Vehicles",
+    "dates": "Dates",
+    "amount": "Amount",
+    "status": "Status",
+    "daysLeft": "Days Left",
+    "actions": "Actions",
+    "viewDetails": "View Details",
+    "delete": "Delete",
+    "noResults": "No results found. Please adjust your search or date filters.",
+    "completed": "Completed",
+    "active": "Active",
+    "overdue": "Overdue",
+    "searchPlaceholder": "Type to search"
+  },
+  "vehiclesDetails": {
+    "trips": "{{count}} Trips",
+    "tripDetails": "Trip Details:",
+    "tripLocation": "Trip Location:",
+    "dropOffLocation": "Drop Off Location:",
+    "vehicleType": "Vehicle Type:",
+    "persons": "Persons:",
+    "email": "Email:",
+    "phoneNumber": "Phone Number:",
+    "bookingDate": "Booking Date:",
+    "bookingTime": "Booking Time:",
+    "tripAmount": "Trip Amount:",
+    "paymentType": "Payment Type:"
+  },
+  "vehicles": {
+    "title": "All Vehicles",
+    "searchPlaceholder": "Type to search",
+    "addNewCar": "Add New Car",
+    "rentalId": "Rental ID",
+    "vehicleName": "Vehicle Name",
+    "seats": "No. of Seats",
+    "charge": "Per Day Charge",
+    "actions": "Actions",
+    "edit": "Edit",
+    "hold": "Hold",
+    "activate": "Activate",
+    "delete": "Delete",
+    "noVehicles": "No vehicles found matching your search."
+  },
+  "addNewCar": {
+    "title": "Add New Car",
+    "subtitle": "Fill In The Details To Add A New Car To Your Rental Fleet",
+    "carModel": "Car Model",
+    "carModelPlaceholder": "ex.., Toyota Camry 2024",
+    "carFeatures": "Car Features",
+    "location": "Location",
+    "locationPlaceholder": "Car location ....",
+    "features": {
+      "airConditioning": "Air Conditioning",
+      "automaticTransmission": "Automatic Transmission",
+      "petrol": "Petrol",
+      "withDriver": "With Driver"
+    },
+    "locations": {
+      "jafnayn": "Jafnayn",
+      "alKhoud": "Al Khoud",
+      "alKhuwair": "Al Khuwair",
+      "alMaabilah": "Al Maabilah",
+      "alMawaleh": "Al Mawaleh",
+      "alMouj": "Al Mouj",
+      "alBustan": "Al Bustan",
+      "alHail": "Al Hail",
+      "alSifah": "Al Sifah",
+      "alWuttayah": "Al Wuttayah",
+      "amerat": "Amerat",
+      "ansab": "Ansab",
+      "azaiba": "Azaiba",
+      "barrAlJissah": "Barr Al Jissah",
+      "bosher": "Bosher",
+      "darsait": "Darsait",
+      "ghala": "Ghala",
+      "ghubrah": "Ghubrah",
+      "halban": "Halban",
+      "hamriya": "Hamriya",
+      "madentSultan": "Madent Sultan",
+      "qaboos": "Madinat Sultan Qaboos",
+      "manumah": "Manumah",
+      "misfah": "Misfah",
+      "muscatHills": "Muscat Hills",
+      "muttrah": "Muttrah",
+      "qantab": "Qantab",
+      "quriyat": "Quriyat",
+      "qurm": "Qurm",
+      "rusail": "Rusail",
+      "ruwi": "Ruwi",
+      "seeb": "Seeb",
+      "sidab": "Sidab",
+      "wadiAlKabir": "Wadi Al Kabir",
+      "yenkit": "Yenkit",
+      "yiti": "Yiti"
+    },
+    "uploadCarPicture": "Upload Car Picture",
+    "imageUploadedSuccess": "Image uploaded successfully!",
+    "uploadPhoto": "upload your photo",
+    "capacity": "Capacity",
+    "passengers": "Passengers",
+    "suitcases": "Suitcases",
+    "mileageLimit": "Mileage Limit",
+    "km": "KM",
+    "pricing": "Pricing",
+    "pricePerDay": "Price Per Day",
+    "discountPrice": "Discount Price (If Applicable)",
+    "dealInclude": "This Deal Include",
+    "deals": {
+      "freeCancellation": "Free Delivery",
+      "theftProtection": "Theft Protection",
+      "fairFuelPolicy": "Fair Fuel Policy",
+      "freeCollisionWaiver": "Free Collision Waiver",
+      "unlimitedMileage": "Unlimited Mileage"
+    },
+    "buttons": {
+      "cancel": "Cancel",
+      "addCarRental": "Add Car Rental"
+    }
+  },
+  "bookingRequests": {
+    "title": "All Booking Requests",
+    "tabs": {
+      "company": "Company",
+      "user": "User"
+    },
+    "searchPlaceholder": "Type to search"
+  },
+  "bookingTable": {
+    "customer": "Customer",
+    "vehicles": "Vehicles",
+    "dates": "Dates",
+    "approvedBy": "Approved By",
+    "amount": "Amount",
+    "actions": "Actions",
+    "confirmed": "Confirmed",
+    "approve": "Approve",
+    "deny": "Deny",
+    "noBookingRequests": "No booking requests found."
+  },
+  "paymentDashboard": {
+    "availableBalance": "Available balance",
+    "manageMethod": "Manage method",
+    "paymentsForActiveOrders": "Payments for active orders",
+    "totalInst": "Total Inst: 28(Under processing)",
+    "dateRange": "Date Range",
+    "filterByDate": "Filter by Date",
+    "searchPlaceholder": "Type user name/vehicle name",
+    "customer": "Customer",
+    "vehicles": "Vehicles",
+    "startDate": "Start Date",
+    "endDate": "End Date",
+    "amount": "Amount",
+    "noBookingsFound": "No bookings found matching your search."
+  },
+  "chat": {
+    "activeConversations": "Active Conversations",
+    "search": "Search...",
+    "messageTo": "Message to {{name}}",
+    "sendingMessage": "Sending message...",
+    "sending": "Sending...",
+    "manageMethod": "Manage method",
+    "availableBalance": "Available balance",
+    "paymentsActive": "Payments for active orders",
+    "messageOrImageError": "Message or image cannot be empty",
+    "messageSendFailed": "Failed to send message. Please try again.",
+    "imageSent": "Image sent successfully",
+    "messageSent": "Message sent successfully"
+  },
+  "notifications": {
+    "title": "Notifications",
+    "all": "All",
+    "ago": "{{time}} ago"
+  },
+  "collaborator": {
+    "title": "Collaborating Company Details",
+    "organizationName": "Organization Name",
+    "phoneNumber": "Phone Number",
+    "sectorOfCompany": "Sector Of The Company",
+    "aboutCompany": "About Company",
+    "startingDate": "Starting Date",
+    "endingDate": "Ending Date",
+    "uploadLogo": "Update Logo",
+    "uploadPhoto": "Upload your logo",
+    "png": "png",
+    "logoUploaded": "Logo uploaded!",
+    "submit": "Submit"
+  },
+  "logoutModal": {
+    "title": "Sure! Do you want to log out?",
+    "no": "No",
+    "yes": "Yes"
+  },
+  "reportsDetails": {
+    "title": "Report Details",
+    "reportedBy": "Reported by:",
+    "date": "Date:",
+    "description": "Description",
+    "pictures": "Pictures",
+    "location": "Location",
+    "openInMaps": "Open in Maps",
+    "coordinates": "Coordinates"
+  },
+  "admin": {
+    "sidebar": {
+      "dashboard": "Dashboard",
+      "earnings": "Earnings",
+      "users": "Users",
+      "drivers": "Drivers",
+      "rentalCompany": "Rental Company",
+      "messages": "Messages",
+      "notifications": "Notification",
+      "subscription": "Subscription",
+      "reports": "Reports",
+      "settings": "Settings",
+      "logout": "Log Out"
+    },
+    "dashboard": {
+      "cards": {
+        "totalEarnings": "Total Earnings (Jun)",
+        "totalVehicles": "Total vehicles",
+        "availableVehicles": "Available Vehicles",
+        "upcomingTrips": "Upcoming Trips"
+      }
+    },
+    "users": {
+      "title": "User List",
+      "searchPlaceholder": "User Name",
+      "table": {
+        "si": "#SI",
+        "name": "User Name",
+        "email": "Email",
+        "phone": "Phone number",
+        "joinDate": "Join Date",
+        "details": "Details"
+      },
+      "dropdown": {
+        "view": "View Details",
+        "delete": "Delete",
+        "hold": "Hold"
+      },
+      "empty": {
+        "noResult": "No users found matching your search.",
+        "clear": "Clear Search"
+      },
+      "results": "Found {{count}} user(s) matching \"{{term}}\""
+    },
+    "drivers": {
+      "driverList": "Driver List",
+      "driverRequest": "Driver Request",
+      "userName": "User Name",
+      "email": "Email",
+      "phone": "Phone number",
+      "joinDate": "Join Date",
+      "submitted": "Submitted",
+      "actions": "Actions",
+      "approve": "Approve",
+      "deny": "Deny",
+      "viewDetails": "View Details",
+      "delete": "Delete",
+      "hold": "Hold",
+      "noDrivers": "No drivers found matching your search.",
+      "clearSearch": "Clear Search",
+      "age": "Age",
+      "licenseExpiry": "License Expiry",
+      "income": "Income"
+    },
+    "driverDetails": {
+      "back": "Back",
+      "status": "Status",
+      "personal_info": "Personal Information",
+      "email": "Email",
+      "phone": "Phone",
+      "address": "Address",
+      "license_info": "License Information",
+      "dl_number": "DL Number",
+      "license_number": "License Number",
+      "expiry_date": "Expiry Date",
+      "experience": "Driving Experience",
+      "documents": "Documents",
+      "view": "View",
+      "download": "Download",
+      "company_info": "Company Information",
+      "approve_message": "If you approve this application please click continue",
+      "deny": "Deny",
+      "continue": "Continue",
+      "not_found": "Driver not found",
+      "go_back": "Go Back"
+    },
+    "rentalCompany": {
+      "driverList": "Driver List",
+      "driverRequest": "Driver Request",
+      "userName": "User Name",
+      "email": "Email",
+      "phone": "Phone number",
+      "joinDate": "Join Date",
+      "submitted": "Submitted",
+      "actions": "Actions",
+      "viewDetails": "View Details",
+      "delete": "Delete",
+      "hold": "Hold",
+      "approve": "Approve",
+      "deny": "Deny",
+      "noDriversFound": "No drivers found matching your search.",
+      "clearSearch": "Clear Search",
+      "action": "Action",
+      "income": "Income"
+    },
+    "subscription": {
+      "tabs": {
+        "users": "Subscribed Users",
+        "plans": "Subscription Plans"
+      },
+      "searchPlaceholder": "User Name",
+      "searchButton": "Search",
+      "contractualButton": "Contractual Customers Charge",
+      "addPlanButton": "+ Add Subscription Plan",
+      "serviceFeeButton": "Service Fee Setup",
+      "filters": {
+        "all": "All",
+        "monthly": "Monthly",
+        "yearly": "Yearly"
+      },
+      "userTable": {
+        "name": "Name",
+        "owner": "Owner",
+        "plan": "Plan",
+        "status": "Status",
+        "amount": "Amount",
+        "actions": "Actions"
+      },
+      "planTable": {
+        "name": "Plan Name",
+        "type": "Type",
+        "cars": "Cars",
+        "status": "Status",
+        "amount": "Amount",
+        "actions": "Actions"
+      },
+      "status": {
+        "active": "Active",
+        "inactive": "Inactive"
+      },
+      "actions": {
+        "view": "View Details",
+        "delete": "Delete",
+        "hold": "Hold",
+        "edit": "Edit"
+      },
+      "empty": {
+        "users": "No users found matching your search.",
+        "plans": "No plans found matching your search.",
+        "clear": "Clear Search"
+      }
+    }
+  },
+  "authorizedPerson": {
+    "title": "Authorization Form",
+    "subtitle": "Fill in all the required information to add a new authorized person",
+    "fullName": "Full Name *",
+    "company": "Company *",
+    "position": "Position *",
+    "email": "Email Address *",
+    "phone": "Phone Number *",
+    "placeholder": {
+      "fullName": "Enter full name",
+      "company": "Enter company name",
+      "position": "Enter position",
+      "email": "Enter email address",
+      "phone": "Enter phone number"
+    },
+    "submit": "Add Authorized Person",
+    "note": "All fields marked with * are required",
+    "success": "Authorized person added successfully!"
+  },
+  "uploadBanner": {
+    "dragOrBrowse": "Drag & drop a file or",
+    "browse": "Browse",
+    "supportedFormats": "Supported formats: PNG, JPEG (recommended: 335x127 pixels)",
+    "uploadFile": "UPLOAD FILE",
+    "removeImage": "Remove image"
+  },
+  "manageOffer": {
+    "allOfferCard": "All Offer Card",
+    "addNewCard": "Add New Card",
+    "createdOfferCard": "New Offer Management"
+  },
+  "collaboratorDetails": {
+    "title": "Collaborator Details",
+    "subtitle": "View and manage collaborator information",
+    "backButton": "Back",
+    "contactInformation": "Contact Information",
+    "email": "Email",
+    "phone": "Phone",
+    "address": "Address",
+    "additionalDetails": "Additional Details",
+    "primaryContact": "Primary Contact",
+    "joinDate": "Join Date",
+    "description": "Description",
+    "authorizedUsers": "Authorized Users",
+    "activeProjects": "Active Projects",
+    "authorizedPeople": "Authorized People",
+    "searchPlaceholder": "Search people...",
+    "filterButton": "Filter",
+    "tableHeaders": {
+      "name": "Name",
+      "role": "Role",
+      "department": "Department",
+      "contact": "Contact",
+      "status": "Status",
+      "lastAccess": "Last Access",
+      "actions": "Actions"
+    },
+    "noData": "No Data Found",
+    "actions": {
+      "holdAccess": "Hold Access",
+      "removeAccess": "Remove Access"
+    }
+  },
+  "attachment": "Attachment",
+  "addServiceFee": {
+    "title": "Service Fee Set Up",
+    "driverLabel": "Driver",
+    "driverChargingLabel": "Charging Percentage",
+    "companyLabel": "Rental Company",
+    "companyChargingLabel": "Charging Percentage",
+    "placeholder": "Enter here",
+    "submit": "Submit"
+  },
+  "addPlan": {
+    "title": "Create New Plan",
+    "planName": "Plan Name",
+    "price": "Price",
+    "discount": "Discount(%)",
+    "additionalCharges": "Additional Charges",
+    "addFeature": "+ Add Feature",
+    "createButton": "Create Plan",
+    "defaultPlanName": "Basic",
+    "defaultPrice": "199",
+    "defaultDiscount": "50",
+    "defaultFeatures": [
+      "Up To 2,000 AI Voice Calls/Month",
+      "Priority Support",
+      "Enter Here"
+    ]
+  },
+  "addContractualCustomers": {
+    "title": "Add Contractual Customers",
+    "chargingPercentage": "Charging Percentage",
+    "placeholder": "Enter here",
+    "submit": "Submit"
+  }
+}

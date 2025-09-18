@@ -1,0 +1,630 @@
+{
+  "selectLanguage": "اختر اللغة",
+  "english": "الإنجليزية",
+  "arabic": "العربية",
+  "submit": "إرسال",
+  "account": "الحساب",
+  "security": "الأمان",
+  "language": "اللغة",
+  "terms": "الشروط والأحكام",
+  "privacy": "سياسة الخصوصية",
+  "manageOfferCard": "إدارة العروض الجديد",
+  "companyId": "معرف الشركة",
+  "collaborations": "التعاون",
+  "updateInformation": "تحديث معلوماتك",
+  "companyName": "اسم الشركة",
+  "phoneNumber": "رقم الهاتف",
+  "aboutCompany": "عن الشركة",
+  "updateLogo": "تحديث الشعار",
+  "uploadPhoto": "تحميل صورتك",
+  "uploadDocuments": "تحميل مستندات الشركة",
+  "upload": "تحميل",
+  "remove": "إزالة",
+  "uploaded": "تم التحميل",
+  "update": "تحديث",
+  "services": "الخدمات",
+  "insurance": "تأمين",
+  "ecoFriendlyOptions": "خيارات صديقة للبيئة",
+  "driverOptions": "خيارات السائق",
+  "mileageOptions": "خيارات الأميال",
+  "roadsideAssistance": "مساعدة على الطريق",
+  "discountsLoyalty": "الخصومات والولاء",
+  "specialDeals": "عروض خاصة",
+  "longDistanceRentals": "تأجير المسافات الطويلة",
+  "vatCertificate": "شهادة ضريبة القيمة المضافة",
+  "commercialRegistration": "السجل التجاري",
+  "contractToSigned": "العقد الموقع",
+  "aboutPlaceHolder": "اكتب عن شركتك",
+  "securityPage": {
+    "title": "تحديث كلمة المرور الخاصة بك",
+    "form": {
+      "oldPassword": "كلمة المرور القديمة",
+      "newPassword": "إنشاء كلمة مرور جديدة",
+      "confirmPassword": "تأكيد كلمة المرور",
+      "oldPlaceholder": "أدخل كلمة المرور الحالية",
+      "newPlaceholder": "أدخل كلمة المرور الجديدة",
+      "confirmPlaceholder": "أكد كلمة المرور الجديدة"
+    },
+    "button": {
+      "update": "تحديث",
+      "updating": "جاري التحديث..."
+    },
+    "requirements": {
+      "title": "متطلبات كلمة المرور:",
+      "length": "• يجب أن تكون 8 أحرف على الأقل",
+      "different": "• يجب أن تكون مختلفة عن كلمة المرور الحالية",
+      "mix": "• يجب أن تحتوي على مزيج من الأحرف والأرقام والرموز"
+    },
+    "error": {
+      "oldRequired": "كلمة المرور القديمة مطلوبة",
+      "newRequired": "كلمة المرور الجديدة مطلوبة",
+      "length": "يجب أن تكون كلمة المرور 8 أحرف على الأقل",
+      "confirmRequired": "يرجى تأكيد كلمة المرور",
+      "noMatch": "كلمتا المرور غير متطابقتين",
+      "sameAsOld": "يجب أن تكون كلمة المرور الجديدة مختلفة عن القديمة"
+    },
+    "success": {
+      "updated": "تم تحديث كلمة المرور بنجاح!"
+    }
+  },
+  "termsPage": {
+    "title": "الشروط والأحكام",
+    "editTitle": "تحرير الشروط والأحكام",
+    "noContent": "لا يوجد محتوى حتى الآن. انقر على تحرير لإضافة المحتوى.",
+    "editButton": "تحرير",
+    "updateButton": "تحديث"
+  },
+  "policyPage": {
+    "title": "سياسة الخصوصية",
+    "editTitle": "تعديل سياسة الخصوصية",
+    "noContent": "لا يوجد محتوى حتى الآن. انقر على تحرير لإضافة المحتوى.",
+    "editButton": "تحرير",
+    "updateButton": "تحديث"
+  },
+  "collaborationsPage": {
+    "title": "قائمة التقارير",
+    "addButton": "إضافة",
+    "searchPlaceholder": "اسم المستخدم",
+    "table": {
+      "si": "#ت",
+      "companyName": "اسم الشركة",
+      "startDate": "تاريخ البدء",
+      "endDate": "تاريخ الانتهاء",
+      "action": "الإجراء"
+    },
+    "dropdown": {
+      "view": "منظر",
+      "edit": "تعديل",
+      "delete": "حذف",
+      "hold": "تعليق",
+      "addAuthorizedPerson": "إضافة أشخاص مخولين"
+    },
+    "noResults": "لم يتم العثور على تقارير تطابق بحثك.",
+    "mobileScrollHint": "← مرر لليسار/اليمين لرؤية المزيد من الأعمدة →"
+  },
+  "reportsPage": {
+    "title": "قائمة التقارير",
+    "searchPlaceholder": "اسم المستخدم",
+    "table": {
+      "si": "#م",
+      "username": "اسم المستخدم",
+      "date": "تاريخ الحدوث",
+      "details": "تفاصيل",
+      "view": "عرض"
+    },
+    "noResults": "لم يتم العثور على تقارير مطابقة لبحثك.",
+    "mobileScrollHint": "← اسحب لليسار/اليمين لرؤية المزيد من الأعمدة →"
+  },
+  "reportDetails": {
+    "title": "تفاصيل التقرير",
+    "reportedBy": "أبلغ عنه:",
+    "date": "التاريخ:",
+    "description": "الوصف",
+    "pictures": "الصور",
+    "location": "الموقع",
+    "coordinates": "الإحداثيات",
+    "openInMaps": "افتح في الخرائط"
+  },
+  "sidebar": {
+    "dashboard": "لوحة القيادة",
+    "manageRentals": "إدارة الإيجارات",
+    "vehicles": "المركبات",
+    "bookingRequest": "طلبات الحجز",
+    "invoicePayment": "الفواتير والدفع",
+    "messages": "الرسائل",
+    "notifications": "الإشعارات",
+    "settings": "الإعدادات",
+    "reports": "التقارير",
+    "logout": "تسجيل الخروج"
+  },
+  "chart": {
+    "title": "الأرباح",
+    "currency": "ر.ع",
+    "year": "السنة"
+  },
+  "dashboardTop": {
+    "welcome": "مرحبًا، {{name}}",
+    "greeting": "أتمنى لك يوماً سعيداً!",
+    "notifications": "الإشعارات",
+    "all": "الكل",
+    "admin": "مشرف"
+  },
+  "transactionTable": {
+    "title": "المعاملات الأخيرة",
+    "columns": {
+      "trId": "معرف المعاملة",
+      "userName": "اسم المستخدم",
+      "userType": "نوع المستخدم",
+      "amount": "المبلغ",
+      "date": "التاريخ",
+      "action": "الإجراء",
+      "view": "عرض"
+    }
+  },
+  "transactionDetails": {
+    "title": "تفاصيل المعاملة",
+    "transactionId": "معرف المعاملة",
+    "date": "التاريخ",
+    "userName": "اسم المستخدم",
+    "accountNumber": "رقم الحساب",
+    "accountHolder": "اسم صاحب الحساب",
+    "amount": "قيمة المعاملة",
+    "email": "البريد الإلكتروني",
+    "notProvided": "غير متوفر",
+    "download": "تحميل",
+    "print": "طباعة"
+  },
+  "rentalData": {
+    "customer": "العميل",
+    "vehicle": "المركبات",
+    "dates": "التواريخ",
+    "amount": "المبلغ",
+    "status": "الحالة",
+    "daysLeft": "الأيام المتبقية",
+    "actions": "الإجراءات",
+    "viewDetails": "عرض التفاصيل",
+    "delete": "حذف",
+    "noResults": "لم يتم العثور على نتائج. يرجى تعديل البحث أو عوامل تصفية التاريخ.",
+    "completed": "مكتمل",
+    "active": "نشط",
+    "overdue": "متأخر",
+    "searchPlaceholder": "اكتب للبحث"
+  },
+  "vehiclesDetails": {
+    "trips": "{{count}} رحلة",
+    "tripDetails": "تفاصيل الرحلة:",
+    "tripLocation": "موقع الرحلة:",
+    "dropOffLocation": "موقع التسليم:",
+    "vehicleType": "نوع السيارة:",
+    "persons": "عدد الأشخاص:",
+    "email": "البريد الإلكتروني:",
+    "phoneNumber": "رقم الهاتف:",
+    "bookingDate": "تاريخ الحجز:",
+    "bookingTime": "وقت الحجز:",
+    "tripAmount": "قيمة الرحلة:",
+    "paymentType": "طريقة الدفع:"
+  },
+  "vehicles": {
+    "title": "جميع المركبات",
+    "searchPlaceholder": "اكتب للبحث",
+    "addNewCar": "إضافة سيارة جديدة",
+    "rentalId": "معرف الإيجار",
+    "vehicleName": "اسم المركبة",
+    "seats": "عدد المقاعد",
+    "charge": "رسوم يومية",
+    "actions": "الإجراءات",
+    "edit": "تعديل",
+    "hold": "تعليق",
+    "activate": "تفعيل",
+    "delete": "حذف",
+    "noVehicles": "لم يتم العثور على مركبات مطابقة لبحثك."
+  },
+  "addNewCar": {
+    "title": "إضافة سيارة جديدة",
+    "subtitle": "املأ التفاصيل لإضافة سيارة جديدة إلى أسطول الإيجار الخاص بك",
+    "carModel": "موديل السيارة",
+    "carModelPlaceholder": "مثال: تويوتا كامري 2024",
+    "carFeatures": "ميزات السيارة",
+    "location": "الموقع",
+    "locationPlaceholder": "مكان السيارة....",
+    "features": {
+      "airConditioning": "تكييف هواء",
+      "automaticTransmission": "ناقل حركة أوتوماتيكي",
+      "petrol": "بنزين",
+      "withDriver": "مع سائق"
+    },
+    "locations": {
+      "jafnayn": "الجفنين",
+      "alKhoud": "الخوض",
+      "alKhuwair": "الخوير",
+      "alMaabilah": "المعبيلة",
+      "alMawaleh": "الموالح",
+      "alMouj": "الموج",
+      "alBustan": "البستان",
+      "alHail": "الحيل",
+      "alSifah": "السيفة",
+      "alWuttayah": "الوطية",
+      "amerat": "العامرات",
+      "ansab": "الأنصب",
+      "azaiba": "العذيبة",
+      "barrAlJissah": "بر الجصة",
+      "bosher": "بوشر",
+      "darsait": "دارسيت",
+      "ghala": "غال",
+      "ghubrah": "الغبرة",
+      "halban": "حلبان",
+      "hamriya": "الحميرية",
+      "madentSultan": "مدينة السلطان",
+      "qaboos": "مدينة السلطان قابوس",
+      "manumah": "المنومة",
+      "misfah": "المسفاة",
+      "muscatHills": "مسقط هيلز",
+      "muttrah": "مطرح",
+      "qantab": "قنتب",
+      "quriyat": "القريات",
+      "qurm": "القرم",
+      "rusail": "الرسايل",
+      "ruwi": "روي",
+      "seeb": "السيب",
+      "sidab": "سداب",
+      "wadiAlKabir": "وادي الكبير",
+      "yenkit": "ينكت",
+      "yiti": "يتي"
+    },
+    "uploadCarPicture": "تحميل صورة السيارة",
+    "imageUploadedSuccess": "تم تحميل الصورة بنجاح!",
+    "uploadPhoto": "قم بتحميل صورتك",
+    "capacity": "السعة",
+    "passengers": "الركاب",
+    "suitcases": "حقائب السفر",
+    "mileageLimit": "حد الأميال",
+    "km": "كم",
+    "pricing": "التسعير",
+    "pricePerDay": "السعر لكل يوم",
+    "discountPrice": "سعر الخصم (إذا وجد)",
+    "dealInclude": "تشمل هذه الصفقة",
+    "deals": {
+      "freeCancellation": "توصيل مجاني",
+      "theftProtection": "حماية من السرقة",
+      "fairFuelPolicy": "سياسة وقود عادلة",
+      "freeCollisionWaiver": "إعفاء من التصادم المجاني",
+      "unlimitedMileage": "أميال غير محدودة"
+    },
+    "buttons": {
+      "cancel": "إلغاء",
+      "addCarRental": "إضافة تأجير سيارة"
+    }
+  },
+  "bookingRequests": {
+    "title": "جميع طلبات الحجز",
+    "tabs": {
+      "company": "شركة",
+      "user": "مستخدم"
+    },
+    "searchPlaceholder": "اكتب للبحث"
+  },
+  "bookingTable": {
+    "customer": "العميل",
+    "vehicles": "المركبات",
+    "dates": "التواريخ",
+    "approvedBy": "تمت الموافقة بواسطة",
+    "amount": "المبلغ",
+    "actions": "الإجراءات",
+    "confirmed": "مؤكد",
+    "approve": "الموافقة",
+    "deny": "رفض",
+    "noBookingRequests": "لم يتم العثور على طلبات حجز."
+  },
+  "paymentDashboard": {
+    "availableBalance": "الرصيد المتاح",
+    "manageMethod": "إدارة الطريقة",
+    "paymentsForActiveOrders": "المدفوعات للطلبات النشطة",
+    "totalInst": "إجمالي الأقساط: 28 (تحت المعالجة)",
+    "dateRange": "نطاق التاريخ",
+    "filterByDate": "تصفية بالتاريخ",
+    "searchPlaceholder": "اكتب اسم المستخدم/اسم المركبة",
+    "customer": "العميل",
+    "vehicles": "المركبات",
+    "startDate": "تاريخ البداية",
+    "endDate": "تاريخ النهاية",
+    "amount": "المبلغ",
+    "noBookingsFound": "لم يتم العثور على حجوزات تطابق بحثك."
+  },
+  "chat": {
+    "activeConversations": "المحادثات النشطة",
+    "search": "بحث...",
+    "messageTo": "رسالة إلى {{name}}",
+    "sendingMessage": "جاري إرسال الرسالة...",
+    "sending": "جارٍ الإرسال...",
+    "manageMethod": "إدارة الطريقة",
+    "availableBalance": "الرصيد المتاح",
+    "paymentsActive": "المدفوعات للطلبات النشطة",
+    "messageOrImageError": "لا يمكن أن تكون الرسالة أو الصورة فارغة",
+    "messageSendFailed": "فشل في إرسال الرسالة. حاول مرة أخرى.",
+    "imageSent": "تم إرسال الصورة بنجاح",
+    "messageSent": "تم إرسال الرسالة بنجاح"
+  },
+  "notifications": {
+    "title": "الإشعارات",
+    "all": "الكل",
+    "ago": "منذ {{time}}"
+  },
+  "collaborator": {
+    "title": "تفاصيل الشركة المتعاونة",
+    "organizationName": "اسم المؤسسة",
+    "phoneNumber": "رقم الهاتف",
+    "sectorOfCompany": "قطاع الشركة",
+    "aboutCompany": "عن الشركة",
+    "startingDate": "تاريخ البدء",
+    "endingDate": "تاريخ الانتهاء",
+    "uploadLogo": "تحديث الشعار",
+    "uploadPhoto": "قم بتحميل شعارك",
+    "png": "png",
+    "logoUploaded": "تم رفع الشعار!",
+    "submit": "إرسال"
+  },
+  "logoutModal": {
+    "title": "هل أنت متأكد أنك تريد تسجيل الخروج؟",
+    "no": "لا",
+    "yes": "نعم"
+  },
+  "reportsDetails": {
+    "title": "تفاصيل التقرير",
+    "reportedBy": "مُبلغ من قبل:",
+    "date": "التاريخ:",
+    "description": "الوصف",
+    "pictures": "الصور",
+    "location": "الموقع",
+    "openInMaps": "افتح في الخرائط",
+    "coordinates": "الإحداثيات"
+  },
+  "admin": {
+    "sidebar": {
+      "dashboard": "لوحة التحكم",
+      "earnings": "الأرباح",
+      "users": "المستخدمون",
+      "drivers": "السائقون",
+      "rentalCompany": "شركة التأجير",
+      "messages": "الرسائل",
+      "notifications": "الإشعارات",
+      "subscription": "الاشتراك",
+      "reports": "التقارير",
+      "settings": "الإعدادات",
+      "logout": "تسجيل الخروج"
+    },
+    "dashboard": {
+      "cards": {
+        "totalEarnings": "إجمالي الأرباح (يونيو)",
+        "totalVehicles": "إجمالي المركبات",
+        "availableVehicles": "المركبات المتاحة",
+        "upcomingTrips": "الرحلات القادمة"
+      }
+    },
+    "users": {
+      "title": "قائمة المستخدمين",
+      "searchPlaceholder": "اسم المستخدم",
+      "table": {
+        "si": "الرقم",
+        "name": "اسم المستخدم",
+        "email": "البريد الإلكتروني",
+        "phone": "رقم الهاتف",
+        "joinDate": "تاريخ الانضمام",
+        "details": "تفاصيل"
+      },
+      "dropdown": {
+        "view": "عرض التفاصيل",
+        "delete": "حذف",
+        "hold": "تعليق"
+      },
+      "empty": {
+        "noResult": "لم يتم العثور على مستخدمين يطابقون بحثك.",
+        "clear": "مسح البحث"
+      },
+      "results": "تم العثور على {{count}} مستخدم مطابق لـ \"{{term}}\""
+    },
+    "drivers": {
+      "driverList": "قائمة السائقين",
+      "driverRequest": "طلبات السائقين",
+      "userName": "اسم المستخدم",
+      "email": "البريد الإلكتروني",
+      "phone": "رقم الهاتف",
+      "joinDate": "تاريخ الانضمام",
+      "submitted": "تاريخ التقديم",
+      "actions": "الإجراءات",
+      "approve": "موافقة",
+      "deny": "رفض",
+      "viewDetails": "عرض التفاصيل",
+      "delete": "حذف",
+      "hold": "تعليق",
+      "noDrivers": "لم يتم العثور على سائقين مطابقين لبحثك.",
+      "clearSearch": "مسح البحث",
+      "age": "عمر",
+      "licenseExpiry": "انتهاء الترخيص",
+      "income": "دخل"
+    },
+    "driverDetails": {
+      "back": "رجوع",
+      "status": "الحالة",
+      "personal_info": "المعلومات الشخصية",
+      "email": "البريد الإلكتروني",
+      "phone": "الهاتف",
+      "address": "العنوان",
+      "license_info": "معلومات الرخصة",
+      "dl_number": "رقم الرخصة",
+      "license_number": "رقم الرخصة",
+      "expiry_date": "تاريخ الانتهاء",
+      "experience": "الخبرة في القيادة",
+      "documents": "المستندات",
+      "view": "عرض",
+      "download": "تنزيل",
+      "company_info": "معلومات الشركة",
+      "approve_message": "إذا كنت توافق على هذا الطلب، الرجاء الضغط على متابعة",
+      "deny": "رفض",
+      "continue": "متابعة",
+      "not_found": "لم يتم العثور على السائق",
+      "go_back": "الرجوع"
+    },
+    "rentalCompany": {
+      "driverList": "قائمة السائقين",
+      "driverRequest": "طلبات السائقين",
+      "userName": "اسم المستخدم",
+      "email": "البريد الإلكتروني",
+      "phone": "رقم الهاتف",
+      "joinDate": "تاريخ الانضمام",
+      "submitted": "تاريخ التقديم",
+      "actions": "الإجراءات",
+      "viewDetails": "عرض التفاصيل",
+      "delete": "حذف",
+      "hold": "تعليق",
+      "approve": "قبول",
+      "deny": "رفض",
+      "noDriversFound": "لم يتم العثور على سائقين يطابقون بحثك.",
+      "clearSearch": "مسح البحث",
+      "action": "الإجراء",
+      "income": "دخل"
+    },
+    "subscription": {
+      "tabs": {
+        "users": "المستخدمون المشتركون",
+        "plans": "خطط الاشتراك"
+      },
+      "searchPlaceholder": "اسم المستخدم",
+      "searchButton": "بحث",
+      "contractualButton": "رسوم العملاء التعاقديين",
+      "addPlanButton": "+ إضافة خطة اشتراك",
+      "serviceFeeButton": "إعداد رسوم الخدمة",
+      "filters": {
+        "all": "الكل",
+        "monthly": "شهري",
+        "yearly": "سنوي"
+      },
+      "userTable": {
+        "name": "الاسم",
+        "owner": "المالك",
+        "plan": "الخطة",
+        "status": "الحالة",
+        "amount": "المبلغ",
+        "actions": "الإجراءات"
+      },
+      "planTable": {
+        "name": "اسم الخطة",
+        "type": "النوع",
+        "cars": "عدد السيارات",
+        "status": "الحالة",
+        "amount": "المبلغ",
+        "actions": "الإجراءات"
+      },
+      "status": {
+        "active": "نشط",
+        "inactive": "غير نشط"
+      },
+      "actions": {
+        "view": "عرض التفاصيل",
+        "delete": "حذف",
+        "hold": "تعليق",
+        "edit": "تعديل"
+      },
+      "empty": {
+        "users": "لم يتم العثور على مستخدمين مطابقين لبحثك.",
+        "plans": "لم يتم العثور على خطط مطابقة لبحثك.",
+        "clear": "مسح البحث"
+      }
+    }
+  },
+  "authorizedPerson": {
+    "title": "نموذج التفويض",
+    "subtitle": "يرجى تعبئة جميع المعلومات المطلوبة لإضافة شخص مخول جديد",
+    "fullName": "الاسم الكامل *",
+    "company": "الشركة *",
+    "position": "المنصب *",
+    "email": "البريد الإلكتروني *",
+    "phone": "رقم الهاتف *",
+    "placeholder": {
+      "fullName": "أدخل الاسم الكامل",
+      "company": "أدخل اسم الشركة",
+      "position": "أدخل المنصب",
+      "email": "أدخل البريد الإلكتروني",
+      "phone": "أدخل رقم الهاتف"
+    },
+    "submit": "إضافة شخص مخول",
+    "note": "جميع الحقول المشار إليها بعلامة * مطلوبة",
+    "success": "تمت إضافة الشخص المخول بنجاح!"
+  },
+  "uploadBanner": {
+    "dragOrBrowse": "اسحب وأسقط ملفًا أو",
+    "browse": "تصفح",
+    "supportedFormats": "التنسيقات المدعومة: PNG, JPEG (مقترح: 335x127 بكسل)",
+    "uploadFile": "رفع الملف",
+    "removeImage": "إزالة الصورة"
+  },
+  "manageOffer": {
+    "allOfferCard": "كل بطاقات العرض",
+    "addNewCard": "إضافة بطاقة جديدة",
+    "createdOfferCard": "إدارة العروض الجديد"
+  },
+  "collaboratorDetails": {
+    "title": "تفاصيل المتعاون",
+    "subtitle": "عرض وإدارة معلومات المتعاون",
+    "backButton": "رجوع",
+    "contactInformation": "معلومات الاتصال",
+    "email": "البريد الإلكتروني",
+    "phone": "الهاتف",
+    "address": "العنوان",
+    "additionalDetails": "تفاصيل إضافية",
+    "primaryContact": "جهة الاتصال الأساسية",
+    "joinDate": "تاريخ الانضمام",
+    "description": "الوصف",
+    "authorizedUsers": "المستخدمون المصرح لهم",
+    "activeProjects": "المشاريع النشطة",
+    "authorizedPeople": "الأشخاص المصرح لهم",
+    "searchPlaceholder": "البحث عن الأشخاص...",
+    "filterButton": "تصفية",
+    "tableHeaders": {
+      "name": "الاسم",
+      "role": "الدور",
+      "department": "القسم",
+      "contact": "الاتصال",
+      "status": "الحالة",
+      "lastAccess": "آخر وصول",
+      "actions": "الإجراءات"
+    },
+    "noData": "لا توجد بيانات",
+    "actions": {
+      "holdAccess": "تعليق الوصول",
+      "removeAccess": "إزالة الوصول"
+    }
+  },
+  "attachment": "مرفق",
+  "addServiceFee": {
+    "title": "إعداد رسوم الخدمة",
+    "driverLabel": "السائق",
+    "driverChargingLabel": "نسبة التحصيل",
+    "companyLabel": "شركة التأجير",
+    "companyChargingLabel": "نسبة التحصيل",
+    "placeholder": "أدخل هنا",
+    "submit": "إرسال"
+  },
+  "addPlan": {
+    "title": "إنشاء خطة جديدة",
+    "planName": "اسم الخطة",
+    "price": "السعر",
+    "discount": "الخصم(٪)",
+    "additionalCharges": "الرسوم الإضافية",
+    "addFeature": "+ إضافة ميزة",
+    "createButton": "إنشاء الخطة",
+    "defaultPlanName": "أساسي",
+    "defaultPrice": "١٩٩",
+    "defaultDiscount": "٥٠",
+    "defaultFeatures": [
+      "حتى 2000 مكالمة صوتية بالذكاء الاصطناعي شهريًا",
+      "دعم ذو أولوية",
+      "أدخل هنا"
+    ]
+  },
+  "addContractualCustomers": {
+    "title": "إضافة العملاء التعاقديين",
+    "chargingPercentage": "نسبة التحصيل",
+    "placeholder": "أدخل هنا",
+    "submit": "إرسال"
+  }
+}
