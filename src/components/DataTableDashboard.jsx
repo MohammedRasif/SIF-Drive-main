@@ -2,40 +2,91 @@ import React, { useState } from "react";
 import Modal from "../shared/Modal";
 import TransactionDetails from "./TransactionDetails";
 import { useTranslation } from "react-i18next";
+import { useShowReactTransactionsQuery } from "../redux/features/withAuth";
 
 const TransactionTable = () => {
   const { t } = useTranslation();
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [selectedTransaction, setSelectedTransaction] = useState(null);
+  const {
+    data: recentTransactions,
+    isLoading,
+    error,
+  } = useShowReactTransactionsQuery();
 
-  const transactions = [
-    {
-      trId: "12345678",
-      userName: "Enrique",
-      userType: "User",
-      amount: "$250",
-      date: "16 Jun 2025",
-      accountNumber: "**** **** **** 2545",
-      accountHolder: "Enrique",
-      email: "enrique@example.com",
-    },
-    {
-      trId: "87654321",
-      userName: "Alice",
-      userType: "Company",
-      amount: "$400",
-      date: "15 Jun 2025",
-      accountNumber: "**** **** **** 1876",
-      accountHolder: "Alice",
-      email: "alice@example.com",
-    },
-    // Add more if needed
-  ];
+  // Transform API data to match the component structure
+  const transactions =
+    recentTransactions?.transactions?.map((transaction) => ({
+      trId: transaction.transaction_id,
+      userName: transaction.user_name,
+      userType:
+        transaction.user_type.charAt(0).toUpperCase() +
+        transaction.user_type.slice(1),
+      amount: `${transaction.currency || "OMR"} ${
+        transaction.amount_omr?.toFixed(2) || 0
+      }`,
+      date: new Date(transaction.date).toLocaleDateString("en-GB", {
+        day: "2-digit",
+        month: "short",
+        year: "numeric",
+      }),
+      accountNumber: `**** **** **** ${
+        transaction.account_number?.slice(-4) || "****"
+      }`,
+      accountHolder: transaction.account_holder,
+      email: transaction.email,
+    })) || [];
+
+  console.log("API Response:", recentTransactions);
+  console.log("Transformed Transactions:", transactions);
 
   const handleViewClick = (transaction) => {
     setSelectedTransaction(transaction);
     setIsModalOpen(true);
   };
+
+  // Loading state
+  if (isLoading) {
+    return (
+      <div className="container mx-auto py-4 bg-[#DBDEEF] mt-10 rounded-xl">
+        <h2 className="text-2xl px-4 font-bold mb-4 text-[#121212] bg-[#DBDEEF] p-2 rounded-t-lg">
+          {t("transactionTable.title")}
+        </h2>
+        <div className="flex justify-center items-center h-32">
+          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-[#0B2088]"></div>
+          <span className="ml-2 text-[#121212]">Loading transactions...</span>
+        </div>
+      </div>
+    );
+  }
+
+  // Error state
+  if (error) {
+    return (
+      <div className="container mx-auto py-4 bg-[#DBDEEF] mt-10 rounded-xl">
+        <h2 className="text-2xl px-4 font-bold mb-4 text-[#121212] bg-[#DBDEEF] p-2 rounded-t-lg">
+          {t("transactionTable.title")}
+        </h2>
+        <div className="flex justify-center items-center h-32 text-red-600">
+          <p>Error loading transactions. Please try again later.</p>
+        </div>
+      </div>
+    );
+  }
+
+  // Empty state
+  if (!transactions.length) {
+    return (
+      <div className="container mx-auto py-4 bg-[#DBDEEF] mt-10 rounded-xl">
+        <h2 className="text-2xl px-4 font-bold mb-4 text-[#121212] bg-[#DBDEEF] p-2 rounded-t-lg">
+          {t("transactionTable.title")}
+        </h2>
+        <div className="flex justify-center items-center h-32 text-[#121212]">
+          <p>No transactions found.</p>
+        </div>
+      </div>
+    );
+  }
 
   return (
     <div className="container mx-auto py-4 bg-[#DBDEEF] mt-10 rounded-xl">
@@ -56,7 +107,10 @@ const TransactionTable = () => {
           </thead>
           <tbody>
             {transactions.map((transaction, index) => (
-              <tr key={index} className="hover:bg-[#cdd0e0] text-center">
+              <tr
+                key={transaction.trId || index}
+                className="hover:bg-[#cdd0e0] text-center"
+              >
                 <td className="p-2">{transaction.trId}</td>
                 <td className="p-2">{transaction.userName}</td>
                 <td className="p-2">{transaction.userType}</td>
@@ -65,7 +119,7 @@ const TransactionTable = () => {
                 <td className="p-2">
                   <button
                     onClick={() => handleViewClick(transaction)}
-                    className="text-[#0B2088] hover:underline hover:cursor-pointer"
+                    className="text-[#0B2088] hover:underline hover:cursor-pointer transition-colors duration-200"
                   >
                     {t("transactionTable.columns.view")}
                   </button>

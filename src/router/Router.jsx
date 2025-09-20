@@ -33,12 +33,10 @@ import ManageOffer from "../pages/Settings/pages/manageOfferCard";
 import CollaboratorDetails from "../components/CollaboratorDetails";
 import EmailVerifyOtp from "../pages/Auth/EmailVerifyOtp";
 
-// Utility function to check if user is logged in
 const isUserLoggedIn = () => {
   return !!localStorage.getItem("access"); 
 };
 
-// Dynamic dashboard route
 const DashboardRoute = () => {
   const userType = localStorage.getItem("userType");
   return userType === "admin" ? <AdminDashboard /> : <Dashboard />;
