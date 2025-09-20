@@ -1,4 +1,4 @@
-import { createBrowserRouter } from "react-router";
+import { createBrowserRouter } from "react-router-dom"; // react-router এর সঠিক import
 import App from "../App";
 import LoginPage from "../pages/Auth/Login";
 import SignupPage from "../pages/Auth/Register";
@@ -32,7 +32,17 @@ import Subscribtions from "../pages/Admin/Subscribtion";
 import ManageOffer from "../pages/Settings/pages/manageOfferCard";
 import CollaboratorDetails from "../components/CollaboratorDetails";
 import EmailVerifyOtp from "../pages/Auth/EmailVerifyOtp";
-const userType = localStorage.getItem("userType");
+
+// Utility function to check if user is logged in
+const isUserLoggedIn = () => {
+  return !!localStorage.getItem("access"); 
+};
+
+// Dynamic dashboard route
+const DashboardRoute = () => {
+  const userType = localStorage.getItem("userType");
+  return userType === "admin" ? <AdminDashboard /> : <Dashboard />;
+};
 
 const router = createBrowserRouter([
   {
@@ -49,7 +59,7 @@ const router = createBrowserRouter([
         children: [
           {
             path: "",
-            element: userType === "admin" ? <AdminDashboard /> : <Dashboard />,
+            element: isUserLoggedIn() ? <DashboardRoute /> : <Landing />, // Protected route
           },
           {
             path: "manage-rentals",
@@ -141,7 +151,6 @@ const router = createBrowserRouter([
             path: "rental-company/:id",
             element: <DriverDetailsPage />
           },
-
           {
             path: "subscription",
             element: <Subscribtions />,
@@ -175,4 +184,5 @@ const router = createBrowserRouter([
     element: <NewPassword />,
   },
 ]);
+
 export default router;

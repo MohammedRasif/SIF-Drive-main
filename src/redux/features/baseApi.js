@@ -15,7 +15,7 @@ export const baseApi = createApi({
     // User-related mutations
     createUser: builder.mutation({
       query: (userData) => ({
-        url: "/accounts/register/company/",
+        url: "/accounts/web/register/company/",
         method: "POST",
         body: userData,
       }),
@@ -32,7 +32,7 @@ export const baseApi = createApi({
     }),
     logIn: builder.mutation({
       query: (loginData) => ({
-        url: "/accounts/auth/login/",
+        url: "/accounts/web/auth/login/",
         method: "POST",
         body: loginData,
       }),
@@ -41,7 +41,7 @@ export const baseApi = createApi({
 
     forgetPassword: builder.mutation({
       query: (forgetPassword) => ({
-        url: "/accounts/password/reset/",
+        url: "/accounts/web/password/reset/",
         method: "POST",
         body: forgetPassword,
       }),
@@ -49,7 +49,7 @@ export const baseApi = createApi({
     }),
     otpVerify: builder.mutation({
       query: (otpData) => ({
-        url: "/accounts/password/reset/verify-otp/",
+        url: "/accounts/web/password/reset/verify-otp/",
         method: "POST",
         body: otpData,
       }),
@@ -66,7 +66,7 @@ export const baseApi = createApi({
     
     updatePassword: builder.mutation({
       query: (data) => ({
-        url: "/accounts/password/reset/confirm/",
+        url: "/accounts/web/password/reset/confirm/",
         method: "POST",
         body: data,
       }),

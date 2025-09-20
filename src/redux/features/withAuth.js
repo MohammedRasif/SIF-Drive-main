@@ -3,12 +3,12 @@ import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 export const sqQuery = createApi({
   reducerPath: "sqQuery",
   baseQuery: fetchBaseQuery({
-    baseUrl: "https://novel-fresh-spaniel.ngrok-free.app/",
+    baseUrl: "http://10.10.13.60:8000/api",
     prepareHeaders: (headers, { endpoint }) => {
       headers.set("ngrok-skip-browser-warning", "true");
 
       // Include token for all requests if available, letting the server handle authentication
-      const token = localStorage.getItem("access_token");
+      const token = localStorage.getItem("access");
       if (token) {
         headers.set("Authorization", `Bearer ${token}`);
       }
@@ -19,7 +19,7 @@ export const sqQuery = createApi({
   }),
 
   tagTypes: [
-    "TourPlan",
+    "profileInfo",
     "TouristProfile",
     "AgencyProfile",
     "Subscription",
@@ -34,17 +34,17 @@ export const sqQuery = createApi({
     "PublishPlanDelete",
   ],
   endpoints: (builder) => ({
-    newPassword: builder.mutation({
-      query: (data) => ({
-        url: "/auth/change-password/",
-        method: "POST",
-        body: data,
-      }),
-      invalidatesTags: ["UserProfile"],
-    }),
-    getTuristProfile: builder.query({
-      query: () => "/tourist/profile/",
-      providesTags: ["TouristProfile"],
+    // newPassword: builder.mutation({
+    //   query: (data) => ({
+    //     url: "/auth/change-password/",
+    //     method: "POST",
+    //     body: data,
+    //   }),
+    //   invalidatesTags: ["UserProfile"],
+    // }),
+    showProfileInformation: builder.query({
+      query: () => "/accounts/web/profile/company/",
+      providesTags: ["profileInfo"],
     }),
     updateTuristProfile: builder.mutation({
       query: (data) => ({
@@ -306,63 +306,64 @@ export const sqQuery = createApi({
 });
 
 export const {
-  useNewPasswordMutation,
-  useGetTuristProfileQuery,
-  useUpdateTuristProfileMutation,
-  // plans
-  useGetPlansQuery,
-  useCreatePlanOneMutation,
-  useUpdatePlanMutation,
-  useDeletePlanMutation,
-  useGetOneDetailQuery,
-  // agency profile
-  useGetAgencyProfileQuery,
-  useUpdateAgencyProfileMutation,
-  // int
-  useLikePostMutation,
-  // offer
-  useOfferBudgetMutation,
-  useAcceptOfferMutation,
-  useGetAllacceptedOfferQuery,
-  // favorite
-  useAddToFavoritMutation,
-  useAllFavoritAgencyQuery,
-  // review
-  useGiveReviewMutation,
-  // show subscription data
-  useShowSubscriptionDataQuery,
-  // Subscription
-  useSubscriptionMutation,
-  // publicis response
-  useGetPublicisResponseQuery,
+  useShowProfileInformationQuery
+  // useNewPasswordMutation,
+  // useGetTuristProfileQuery,
+  // useUpdateTuristProfileMutation,
+  // // plans
+  // useGetPlansQuery,
+  // useCreatePlanOneMutation,
+  // useUpdatePlanMutation,
+  // useDeletePlanMutation,
+  // useGetOneDetailQuery,
+  // // agency profile
+  // useGetAgencyProfileQuery,
+  // useUpdateAgencyProfileMutation,
+  // // int
+  // useLikePostMutation,
+  // // offer
+  // useOfferBudgetMutation,
+  // useAcceptOfferMutation,
+  // useGetAllacceptedOfferQuery,
+  // // favorite
+  // useAddToFavoritMutation,
+  // useAllFavoritAgencyQuery,
+  // // review
+  // useGiveReviewMutation,
+  // // show subscription data
+  // useShowSubscriptionDataQuery,
+  // // Subscription
+  // useSubscriptionMutation,
+  // // publicis response
+  // useGetPublicisResponseQuery,
 
-  useGetOfferedPlanQuery,
-  useGetOneTourPlanQuery,
-  // notifications
-  useGetNotificationsQuery,
-  // chat
-  useInviteToChatMutation,
-  useGetChatListQuery,
-  useGetChatHsitoryQuery,
-  // show user information
-  useShowUserInpormationQuery,
-  // discount
-  useAskForDiscountMutation,
-  useOfferDiscountMutation,
-  useFinalOfferMutation,
-  useAcceptFinalOfferMutation,
+  // useGetOfferedPlanQuery,
+  // useGetOneTourPlanQuery,
+  // // notifications
+  // useGetNotificationsQuery,
+  // // chat
+  // useInviteToChatMutation,
+  // useGetChatListQuery,
+  // useGetChatHsitoryQuery,
+  // // show user information
+  // useShowUserInpormationQuery,
+  // // discount
+  // useAskForDiscountMutation,
+  // useOfferDiscountMutation,
+  // useFinalOfferMutation,
+  // useAcceptFinalOfferMutation,
 
-  // change password
-  useChangePasswordMutation,
+  // // change password
+  // useChangePasswordMutation,
 
-  // delete publish
-  useDeletePublishPlanMutation,
+  // // delete publish
+  // useDeletePublishPlanMutation,
 
-  // decline request
-  useDeclineRequestMutation,
-  useGetTourPlanPublicQuery,
-  // seen notification
-  useSeenNotificationMutation,
-  // delete notification
-  useDeleteNotificationMutation,
+  // // decline request
+  // useDeclineRequestMutation,
+  // useGetTourPlanPublicQuery,
+  // // seen notification
+  // useSeenNotificationMutation,
+  // // delete notification
+  // useDeleteNotificationMutation,
 } = sqQuery;

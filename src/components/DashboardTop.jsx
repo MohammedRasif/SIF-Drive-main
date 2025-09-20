@@ -1,6 +1,7 @@
 import { useState, useRef, useEffect } from "react";
 import { Bell, User } from "lucide-react";
 import { useTranslation } from "react-i18next";
+import { useShowProfileInformationQuery } from "../redux/features/withAuth";
 
 const notifications = [
   {
@@ -28,6 +29,7 @@ export default function DashboardTop() {
   const { t } = useTranslation();
   const [showNotifications, setShowNotifications] = useState(false);
   const bellRef = useRef(null);
+  const { data: profileData, isLoading } = useShowProfileInformationQuery();
 
   useEffect(() => {
     const handleClickOutside = (e) => {
@@ -102,13 +104,25 @@ export default function DashboardTop() {
           )}
         </div>
 
-        {/* User Info */}
+        
         <div className="flex items-center gap-3">
-          <div className="bg-[#DBDEEF] p-2 rounded-full">
-            <User className="w-5 h-5 text-[#0B2088]" />
-          </div>
+          {profileData?.profile_image ? (
+            <img
+              src={profileData.profile_image}
+              alt={userName}
+              className="w-10 h-10 rounded-full object-cover"
+              onError={(e) => (e.target.style.display = "none")}
+            />
+          ) : (
+            <div className="bg-[#DBDEEF] p-2 rounded-full">
+              <User className="w-5 h-5 text-[#0B2088]" />
+            </div>
+          )}
+
           <div className="text-sm">
-            <p className="text-[#0B2088] font-medium">Caringcompany</p>
+            <p className="text-[#0B2088] font-medium">
+              {profileData?.company_name}
+            </p>
             <p className="text-[#5C5C5C] text-xs">{t("dashboardTop.admin")}</p>
           </div>
         </div>
