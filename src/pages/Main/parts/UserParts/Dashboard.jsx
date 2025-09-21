@@ -3,7 +3,10 @@ import CardDashboard from "../../../../components/CardDashboard";
 import EarningsChart from "../../../../components/DashboardChact";
 import DataTableDashboard from "../../../../components/DataTableDashboard";
 import { useTranslation } from "react-i18next";
-import { useShowRarningChartDataQuery, useShowUserEarningsQuery } from "../../../../redux/features/withAuth";
+import {
+  useShowRarningChartDataQuery,
+  useShowUserEarningsQuery,
+} from "../../../../redux/features/withAuth";
 
 const years = ["2024", "2023", "2022", "2021", "2020"];
 
@@ -12,22 +15,35 @@ function Dashboard() {
   const [earningsData, setEarningsData] = useState([]);
   const [selectedYear, setSelectedYear] = useState("2024");
   const { t } = useTranslation();
-  
-  const { data: earningInformation, error, isLoading } = useShowUserEarningsQuery();
-  const { data: earningChartInformation, isLoading: chartLoading } = useShowRarningChartDataQuery({ year: selectedYear });
+
+  const {
+    data: earningInformation,
+    error,
+    isLoading,
+  } = useShowUserEarningsQuery();
+
+  const { data: earningChartInformation, isLoading: chartLoading } =
+    useShowRarningChartDataQuery({ year: selectedYear });
 
   // Transform User Earnings data to CardDashboard format
   useEffect(() => {
     if (earningInformation && !isLoading) {
-      const { total_earnings, total_vehicles, available_vehicles, upcoming_trips } = earningInformation;
-      
+      const {
+        total_earnings,
+        total_vehicles,
+        available_vehicles,
+        upcoming_trips,
+      } = earningInformation;
+
       setOverView([
         {
           title: "Total Earnings (Jun)",
-          value: `OMR ${total_earnings?.toLocaleString('en-US', { 
-            minimumFractionDigits: 2, 
-            maximumFractionDigits: 2 
-          }) || 0}`,
+          value: `OMR ${
+            total_earnings?.toLocaleString("en-US", {
+              minimumFractionDigits: 2,
+              maximumFractionDigits: 2,
+            }) || 0
+          }`,
           subtext: "-10% from last month",
         },
         {
@@ -53,31 +69,47 @@ function Dashboard() {
   useEffect(() => {
     if (earningChartInformation && !chartLoading) {
       const { monthly_breakdown, currency } = earningChartInformation;
-      
+
       // Map month numbers to 3-letter abbreviations
       const monthAbbreviations = [
-        "JAN", "FEB", "MAR", "APR", "MAY", "JUN",
-        "JUL", "AUG", "SEP", "OCT", "NOV", "DEC"
+        "JAN",
+        "FEB",
+        "MAR",
+        "APR",
+        "MAY",
+        "JUN",
+        "JUL",
+        "AUG",
+        "SEP",
+        "OCT",
+        "NOV",
+        "DEC",
       ];
-      
+
       const chartData = monthly_breakdown.map((monthData) => {
         const monthAbbr = monthAbbreviations[monthData.month - 1];
         const value = parseFloat(monthData.earnings);
-        
-        // Highlight current month (June)
+
+        // Highlight current month (June for 2024, adjust based on current date)
+        // For now, using June as current month
         const isCurrentMonth = monthData.month === 6;
-        
+
         return {
           month: monthAbbr,
           value: value,
           ...(isCurrentMonth && {
             highlighted: true,
-            percentageChange: "+8.24%" // You can calculate this dynamically
-          })
+            percentageChange: "+8.24%", // You can calculate this dynamically
+          }),
         };
       });
-      
+
       setEarningsData(chartData);
+
+      // Update selected year from API response
+      if (earningChartInformation.year) {
+        setSelectedYear(earningChartInformation.year.toString());
+      }
     }
   }, [earningChartInformation, chartLoading]);
 
@@ -130,18 +162,20 @@ function Dashboard() {
           <EarningsChart
             title={t("chart.title")}
             data={earningsData}
-            selectedYear={selectedYear}
+            selectedYear={
+              earningChartInformation?.year?.toString() || selectedYear
+            } // Use API year or fallback
             years={years}
             onYearChange={handleYearChange}
-            maxValue={Math.max(...earningsData.map(d => d.value), 10000)} // Dynamic max value
+            maxValue={Math.max(...earningsData.map((d) => d.value), 10000)}
             backgroundColor="#DBDEEF"
             barColor="#0B2088"
             textColor="#1E1E1E"
             className="shadow-lg"
-            currency="OMR" // From API response
+            currency="OMR"
           />
         </div>
-        
+
         {/* Data Table & Switch Button */}
         <div>
           <DataTableDashboard />
